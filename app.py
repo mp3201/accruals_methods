@@ -70,7 +70,7 @@ with st.container():
 	#      acc_sel = st.selectbox(
 	#                 "Accrual Measurement", ['Balance Sheet', 'Cash Flow', 'Non-Transaction Accrual'] , index=0)
 
-	acc_data_sub = acc_data.loc[(acc_data['gsector_str'].isin([industry_sel])) & (acc_data['gsector_str']!='')][['gvkey', 'fyear', 'gsector', 'acc_bs', 'acc_cf', 'ntacc_cf']].dropna()
+	acc_data_sub = acc_data.loc[(acc_data['gsector_str'].isin([industry_sel])) & (acc_data['gsector_str']!='')][['gvkey', 'fyear', 'gsector_str', 'acc_bs', 'acc_cf', 'ntacc_cf']].dropna()
 
 
 	fig = ff.create_distplot(
