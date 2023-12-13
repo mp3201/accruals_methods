@@ -14,6 +14,8 @@ import plotly.figure_factory as ff
 # st.sidebar.markdown("Welcome to my first awesome app. This app is built using Streamlit and uses data source from redfin housing market data. I hope you enjoy!")
 
 #Add title and subtitle to the main interface of the app
+st.set_page_config(layout="wide")
+
 st.title("Accrual Calculations")
 st.markdown("This app illustrates different ways of calculating accruals for North American public companies and computes hedged portfolio returns based on the different approaches")
 st.markdown("**Author**: *Minh Phan*")
